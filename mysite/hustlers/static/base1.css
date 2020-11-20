@@ -1,0 +1,29 @@
+.mapouter{
+    float: right;
+}
+
+.flex-container{
+    box-sizing : border-box;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    width : 100%;
+    justify-content : center;
+    align-items: center;
+}
+.wrapper{
+    justify-content: space-around;
+}
+.card{
+    width: 350px;
+    height: 550px;
+    padding: 2rem 1rem;
+    position : relative;
+    display : flex;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    justify-content: center;
+    margin: 15px;
+}
+
+.fa-2x{
+    font-size: 1.5em;
+}
