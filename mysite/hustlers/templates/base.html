@@ -1,0 +1,171 @@
+{% load static %}
+
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+       <!-- Compiled and minified CSS -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>breasty</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href= "{% static 'css/bootstrap.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout" style="background-color:#FDC1E5; font-family: sans-serif;">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/2e1ca89c43fa0a61affcdf7fef82382e/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="/">
+                              <img src = "https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/4bfd7dc19d5f60cedd185d49e63356fa/logo.png" style = "height: 6vh; width: 5vw;">breasty
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <div class="menu-area">
+                     <div class="limit-box">
+                        <nav class="main-menu">
+                           <ul class="menu-area-main">
+                              <li class="active"> <a href="/">Home</a> </li>
+                              <li> <a href="#about">About</a> </li>
+                               <li> <a href="#download">Community</a> </li>
+                              <li> <a href="#testimonial">Sign In</a> </li>
+                               <li> <a href="/">Help</a> </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end header inner -->
+         </div></header>
+      <!-- end header -->
+      <!-- static map -->
+
+<div id="key">
+      <div class="mapouter">
+          <div class="gmap_canvas">
+              <iframe width="773" height="640" id="gmap_canvas" src="https://maps.google.com/maps?q=cancer%20hospitals%20in%20delhi&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://putlocker-is.org"></a>
+            </div>
+            <style>
+            .mapouter{
+            position:relative;
+            text-align:right;
+            height:640px;
+            width:773px;}
+            .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height:640px;
+            width:773px;}
+</style>
+      </div>
+</div>
+<!-- map ends-->
+<!--form-->
+
+
+      <div class="container" >
+          <div class="row" id="box">
+          <div class="login-box">
+              <form action="inline"></form>
+              <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                  <input id="textbox"  type="text" placeholder="Enter location" name="location">
+                  <input id="button" class="btn" type="button" name="submit" value="Submit" >
+
+              </form>
+              </div>
+          </div>
+      </div>
+
+         </div>
+      <!--forms-->
+      <!-- cards -->
+      <div class="flex-container">
+          {% for post in final_postings %}
+          <div class="wrapper">
+            <div class="col s4">
+                <div class="card">
+                    <div class="card-image">
+                       <a href="{{ post.3 }}"><img src="{{ post.0 }}" alt=""></a>
+                    </div>
+                    <div class="card-content">
+                        <p>{{ post.1 }}</p>
+                        <p>{{ post.2 }}</p>
+                        <a href="{{ post.3 }}" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- end cards -->
+
+
+      <!-- Javascript files-->
+
+      <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/307713a47548d6b6ca8dc721f3a8f769/jquery.min.js"></script>
+      <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/838c1dd1bd79e0b27ad7bd9bae1e1185/popper.min.js"></script>
+      <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/fb7a961aa1c7a377f8fcf5bbe375c188/bootstrap.bundle.min.js"></script>
+      <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/e55d4af819c7c6f728971c3a93829d51/jquery-3.0.0.min.js"></script>
+      <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/2b4d8cacf60c8442b96dcb509a64d6ae/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/72f23e1fb2b99c39eab7879adf558cbf/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/bc8ab7a22a25b1679f7d29ac1b9d2400/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script>
+
+         $(document).ready(function(){
+         $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+
+         $(".zoom").hover(function(){
+
+         $(this).addClass('transition');
+         }, function(){
+
+         $(this).removeClass('transition');
+         });
+         });
+
+      </script>
+</body>
+</html>
