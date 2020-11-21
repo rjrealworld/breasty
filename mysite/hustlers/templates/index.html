@@ -13,6 +13,8 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href= "{% static 'css/bootstrap.css' %}">
       <!-- style css -->
       <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -23,6 +25,7 @@
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -140,9 +143,57 @@
                <div class="col-md-12">
                   <div id="main_slider" class="carousel slide banner-main" data-ride="carousel">
                      <div class="carousel-inner">
-                        <div class="carousel-item active"> <img class="first-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/9a1a70aa02dff0774cc6fb6f1e224d67/banner1.png" alt="First slide" style="height: 40vh;"> </div>
-                        <div class="carousel-item"> <img class="second-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/9a1a70aa02dff0774cc6fb6f1e224d67/banner1.png" alt="Second slide" style="height: 40vh;"> </div>
-                        <div class="carousel-item"> <img class="third-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/9a1a70aa02dff0774cc6fb6f1e224d67/banner1.png" alt="Third slide" style="height: 40vh;"> </div>
+                        <div class="carousel-item active"> 
+                           <div class="bs-example">
+                              <div class="card" style="max-width: 500px;">
+                                  <div class="row no-gutters">
+                                      <div class="col-sm-5" style="background: #868e96;">
+                                          <img src="https://sfbwmag.com/wp-content/uploads/sites/6/2019/09/0919-Glamathon.jpg" class="card-img-top h-100" alt="...">
+                                      </div>
+                                      <div class="col-sm-7">
+                                          <div class="card-body">
+                                              <h5 class="card-title">Riya Jain</h5>
+                                              <p class="card-text">The year was 2014, I was finally eight months pregnant with my first baby after 3 miscarriages over the last year. I found a lump in my right breast...</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item"> 
+                           <div class="bs-example">
+                              <div class="card" style="max-width: 500px;">
+                                  <div class="row no-gutters">
+                                      <div class="col-sm-5" style="background: #868e96;">
+                                          <img src="https://sfbwmag.com/wp-content/uploads/sites/6/2019/09/0919-Glamathon.jpg" class="card-img-top h-100" alt="...">
+                                      </div>
+                                      <div class="col-sm-7">
+                                          <div class="card-body">
+                                              <h5 class="card-title">Mahi Monga</h5>
+                                              <p class="card-text">Cancer was never talked when I was grawing up. I don't remember anyone having cancer in our family, but then again, it wasn't...</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item"> 
+                           <div class="bs-example">
+                              <div class="card" style="max-width: 500px;">
+                                  <div class="row no-gutters">
+                                      <div class="col-sm-5" style="background: #868e96;">
+                                          <img src="https://sfbwmag.com/wp-content/uploads/sites/6/2019/09/0919-Glamathon.jpg" class="card-img-top h-100" alt="...">
+                                      </div>
+                                      <div class="col-sm-7">
+                                          <div class="card-body">
+                                              <h5 class="card-title">Shruti Jain</h5>
+                                              <p class="card-text">Fast forward to my 20's and one day when my mom was visiting, she asked me about a lump she had found in her breast. I remember telling her...</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                      <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev"> <i class='fa fa-angle-left'></i></a> <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next"> <i class='fa fa-angle-right'></i></a>
                   </div>
@@ -161,7 +212,7 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Connect with communities</h2>
-                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, w</span>
+                     <span>Get involved with the communities to support each other and provide your support to those who are in need.</span>
                   </div>
                </div>
             </div>
@@ -171,36 +222,27 @@
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
                   <div class="service-box">
                      <figure>
-                        <a href="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/06dff6539de02e9a576e02d4dc9daba7/4.jpg" class="fancybox" rel="ligthbox">
-                        <img  src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/06dff6539de02e9a576e02d4dc9daba7/4.jpg" class="zoom img-fluid "  alt="">
+                        <a href="https://www.abcf.org/" class="fancybox"">
+                           <img  src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/80f48eeda44266ed688d933647e27a5f/abc.jpeg" class="img-fluid "  alt="">
                         </a>
-                        <span class="hoverle">
-                        <a href="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/06dff6539de02e9a576e02d4dc9daba7/4.jpg" class="fancybox" rel="ligthbox">Org 1</a>
-                        </span>
                      </figure>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
                   <div class="service-box">
                      <figure>
-                        <a href="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/06dff6539de02e9a576e02d4dc9daba7/4.jpg" class="fancybox" rel="ligthbox">
-                        <img  src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/06dff6539de02e9a576e02d4dc9daba7/4.jpg" class="zoom img-fluid "  alt="">
+                        <a href="https://www.bcrf.org/" class="fancybox"">
+                           <img  src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/b014735ff0d06e0e196060bae0a4faaa/BCRF.jpeg" class="img-fluid "  alt="">
                         </a>
-                        <span class="hoverle">
-                        <a href="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/06dff6539de02e9a576e02d4dc9daba7/4.jpg" class="fancybox" rel="ligthbox">Org 2</a>
-                        </span>
                      </figure>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
                   <div class="service-box">
                      <figure>
-                        <a href="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/06dff6539de02e9a576e02d4dc9daba7/4.jpg" class="fancybox" rel="ligthbox">
-                        <img  src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/06dff6539de02e9a576e02d4dc9daba7/4.jpg" class="zoom img-fluid "  alt="">
+                        <a href="https://www.nationalbreastcancer.org/" class="fancybox">
+                           <img  src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/19984600a86f74cc58fe42a390bbe876/national_breast_cancer.jpeg" class="img-fluid "  alt="">
                         </a>
-                        <span class="hoverle">
-                        <a href="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/06dff6539de02e9a576e02d4dc9daba7/4.jpg" class="fancybox" rel="ligthbox">Org 3</a>
-                        </span>
                      </figure>
                   </div>
                </div>
@@ -223,11 +265,11 @@
                   <div id="testimonial_slider" class="carousel slide banner-bg" data-ride="carousel">
                      <div class="carousel-inner">
                         <div class="carousel-item active">
-                           <img class="first-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/9b230720e634d2aee6ee9cf7543ac4d6/testimonial-img.png">
+                           <img class="first-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/7f5f96d3a10846e6783ba970e559a478/riya.jpg">
                            <div class="container">
                               <div class="carousel-caption relat">
-                                 <h3>Mahi Monga</h3>
-                                 <span><i class="fa fa-quote-left"></i> ( Front-End Developer )<i class="fa fa-quote-right"></i></span>
+                                 <h3>Riya Jain</h3>
+                                 <span><i class="fa fa-quote-left"></i> ( Idea Innovation and Front-End )<i class="fa fa-quote-right"></i></span>
                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem  </p>
                               </div>
                            </div>
@@ -237,37 +279,37 @@
                            <div class="container">
                               <div class="carousel-caption relat">
                                  <h3>Vaibhavi</h3>
-                                 <span><i class="fa fa-quote-left"></i> ( foundery )<i class="fa fa-quote-right"></i></span>
+                                 <span><i class="fa fa-quote-left"></i> ( Django Developer )<i class="fa fa-quote-right"></i></span>
                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem  </p>
                               </div>
                            </div>
                         </div>
                         <div class="carousel-item">
-                           <img class="third-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/9b230720e634d2aee6ee9cf7543ac4d6/testimonial-img.png">
+                           <img class="third-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/11d6c9aa6be325280d55c6519db85ef3/kushagra.jpeg">
                            <div class="container">
                               <div class="carousel-caption relat">
-                                 <h3>Kushagra</h3>
-                                 <span><i class="fa fa-quote-left"></i> ( foundery )<i class="fa fa-quote-right"></i></span>
+                                 <h3>Kushagra Bhagat</h3>
+                                 <span><i class="fa fa-quote-left"></i> ( Back-End and NLP Developer )<i class="fa fa-quote-right"></i></span>
                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem  </p>
                               </div>
                            </div>
                         </div>
                         <div class="carousel-item">
-                           <img class="third-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/9b230720e634d2aee6ee9cf7543ac4d6/testimonial-img.png">
+                           <img class="third-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/59da20fdcfc3561c9c131240f8c2f4d5/shruti.jpg">
                            <div class="container">
                               <div class="carousel-caption relat">
-                                 <h3>Shruti</h3>
-                                 <span><i class="fa fa-quote-left"></i> ( foundery )<i class="fa fa-quote-right"></i></span>
+                                 <h3>Shruti Jain</h3>
+                                 <span><i class="fa fa-quote-left"></i> ( Front-End and Django Developer )<i class="fa fa-quote-right"></i></span>
                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem  </p>
                               </div>
                            </div>
                         </div>
                         <div class="carousel-item">
-                           <img class="third-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/9b230720e634d2aee6ee9cf7543ac4d6/testimonial-img.png">
+                           <img class="third-slide" src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/b73a2be433e27089afea0d8ce64ffb42/Mahi.jpg">
                            <div class="container">
                               <div class="carousel-caption relat">
-                                 <h3>Riya</h3>
-                                 <span><i class="fa fa-quote-left"></i> ( foundery )<i class="fa fa-quote-right"></i></span>
+                                 <h3>Mahi Monga</h3>
+                                 <span><i class="fa fa-quote-left"></i> ( Idea Creation, Back-End and NLP )<i class="fa fa-quote-right"></i></span>
                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem  </p>
                               </div>
                            </div>
@@ -305,22 +347,36 @@
       </div>
       <!-- end Testimonial -->
       <!--  footer -->
-      <footr>
+      <footer>
          <div class="footer copyright">
-            <p>Copyright: All Right Reserved By <a href="#">CodexAlpha</a></p>
+            <p>Copyright: All Right Reserved By {{ response }}<a href="#">CodexAlpha</a></p>
          </div>
-      </footr>
+      </footer>
       <!-- end footer -->
-      <script>
-        window.__be = window.__be || {};
+      <!-- <script>
+        window._be = window._be || {};
            console.log(window.__be);
            window.__be.id = "5fadb48786d36000071ae758";
            (function() {
                var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
-               be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+               be.src = 'chatbot.js';
                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
            })();
-     </script>
+     </script> -->
+     <!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+   window._be = window._be || {};
+   window.__be.id = "5fb8fbf2137e3a0007803990";
+   (function() {
+       var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+       be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+   })();
+</script>
+<!-- End of ChatBot code -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+  <script src="{% static 'css/main.js' %}"></script>
 
       <!-- Javascript files-->
       <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/307713a47548d6b6ca8dc721f3a8f769/jquery.min.js"></script>
@@ -332,22 +388,16 @@
       <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/72f23e1fb2b99c39eab7879adf558cbf/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="https://trello-attachments.s3.amazonaws.com/5fae80b96139a638fce8c94a/5fae80e72a405828584e0fd1/bc8ab7a22a25b1679f7d29ac1b9d2400/custom.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-      <script>
-         $(document).ready(function(){
-         $(".fancybox").fancybox({
-         openEffect: "none",
-         closeEffect: "none"
-         });
+   
+      <script type="text/javascript">
+         window.__be = window.__be || {};
+         window.__be.id = "5fb8fbf2137e3a0007803990";
+         (function() {
+             var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+             be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+         })();
+     </script>
 
-         $(".zoom").hover(function(){
-
-         $(this).addClass('transition');
-         }, function(){
-
-         $(this).removeClass('transition');
-         });
-         });
-
-      </script>
    </body>
 </html>
