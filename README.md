@@ -17,3 +17,13 @@ Substantial support for breast cancer awareness and research funding has helped 
 # Problem Statement
 
 After knowing how common and how deadly it is important to spread awareness about this and take actions to minimize the deaths by detecting it at early stages and providing emotional support to victim.
+These are some facts about it for paryicaularly in India:
+- Breast cancer is the most common cancer in women in India.
+- It is reported that every four minutes, an Indian woman is diagnosed with breast cancer and one woman dies of breast cancer, every 13 minutes in   India.
+
+-With the increase in the number of breast cancer cases in India, the fear of cancer is on the rise. One cannot prevent breast cancer but can increase the survival rates by being informed and choosing the right treatment at the right time.
+
+-Factors like lack of proper information, communication, awareness, financial condition, improper medications, immobility, and lack of support groups are also the causes of this cancer increasing at an alarming rate
+
+# Our Solution
+
