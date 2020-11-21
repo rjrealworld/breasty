@@ -1,4 +1,4 @@
-## 🎗 Breasty 🎀
+## Breasty 🎗🎀
 
 
 # Introduction
@@ -56,3 +56,5 @@ These are some facts about it for paryicaularly in India:
 - Upgrading to SHA-512 data-security protocols
 - Onboarding with support groups
 - Collaborating with more global and local NGOs/ Organization 
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
