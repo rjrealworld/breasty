@@ -10,10 +10,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-/*****----------------------------------------
+/***----------------------------------------
      1) font-family: 'Rajdhani', sans-serif;  
      2) font-family: 'Poppins', sans-serif; 
-----------------------------------------*****/
+----------------------------------------***/
 
 
 /*---------------------------------------------------------------------
@@ -240,7 +240,7 @@ button {
 }
 
 
-/**-- heading section --**/
+/*-- heading section --*/
 
 .main_heading {
 	text-align: center;
@@ -324,7 +324,7 @@ a.readmore_bt {
 }
 
 
-/**-- list icon --**/
+/*-- list icon --*/
 
 .ul_list_info_icon ul {
 	list-style: none;
@@ -527,7 +527,7 @@ nav.main-menu {
 }
 
 
-/*-- end header middle --*/
+/-- end header middle --/
 
 .top-bar-info {
 	background: #111111;
@@ -1702,7 +1702,7 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 
-/** about section **/
+/* about section */
 
 .about {
 	padding-top: 90px;
@@ -1755,10 +1755,10 @@ input[type="radio"] .styled:checked+label::after {
 	line-height: 30px;
 }
 
-/** end about section **/
+/* end about section */
 
 
-/** service section **/
+/* service section */
 
 .service {
 	padding-top: 90px;
@@ -1767,7 +1767,8 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 .service .titlepage span {
-	color: #3d3c3c
+	color: #49296C;
+	font-size: 24px;
 }
 
 .service .service-box figure {
@@ -1780,24 +1781,6 @@ input[type="radio"] .styled:checked+label::after {
 
 .green {
 	background-color: #6fb936;
-}
-
-.service .service-box .hoverle {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 15px;
-}
-
-.service .service-box .hoverle a {
-	padding: 5px 30px;
-	color: #70134B;
 }
 
 .service .titlepage {
@@ -1841,7 +1824,7 @@ input[type="radio"] .styled:checked+label::after {
 }
 
 
-/** gallery section css **/
+/* gallery section css */
 
 #demo {
 	height: 100%;
@@ -1859,15 +1842,6 @@ input[type="radio"] .styled:checked+label::after {
 
 .page-top {
 	margin-top: 85px;
-}
-
-img.zoom {
-	width: 100%;
-	object-fit: cover;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
 }
 
 .transition {
@@ -1890,13 +1864,13 @@ img.zoom {
 }
 
 
-/** end section **/
+/* end section */
 
 
-/** end service section **/
+/* end service section */
 
 
-/** download section **/
+/* download section */
 
 .download {
 	padding-top: 90px;
@@ -1999,7 +1973,7 @@ img.zoom {
 }
 
 
-/** end download section **/
+/* end download section */
 
 .testimonial {
 	background: #DD9FC4;
@@ -2292,7 +2266,7 @@ ul.contant_icon li img {
 }
 
 
-/** slider arrow **/
+/* slider arrow */
 
 #myCarousel .carousel-control-prev,
 #myCarousel .carousel-control-next {
