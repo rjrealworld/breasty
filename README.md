@@ -58,6 +58,6 @@ These are some facts about it for paryicaularly in India:
 - Collaborating with more global and local NGOs/ Organization 
 # Contributors 
 
-![Mahi Monga](https://github.com/rjrealworld/breasty/blob/main/Contributors/Mahi.jpg)
+![Mahi Monga](https://www.linkedin.com/in/mahimonga/)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
