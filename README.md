@@ -16,4 +16,4 @@ Substantial support for breast cancer awareness and research funding has helped 
 
 # Problem Statement
 
-After knowing how common and how deadly it is  
+After knowing how common and how deadly it is important to spread awareness about this and take actions to minimize the deaths by detecting it at early stages and providing emotional support to victim.
