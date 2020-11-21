@@ -7,11 +7,11 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
 from .models import Task
 from django.http import HttpResponseRedirect
-#from . import meera
+
 
 
 def index(request):
-    return render(request,"index.html") #{"response" : meera.get_reply(inp)})
+    return render(request,"index.html")
 
 #testimonial
 def profile(request):
